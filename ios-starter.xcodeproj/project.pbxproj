@@ -12,8 +12,19 @@
 		02472202200F895C007A280D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02472200200F895C007A280D /* Main.storyboard */; };
 		02472204200F895C007A280D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02472203200F895C007A280D /* Assets.xcassets */; };
 		02472207200F895C007A280D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02472205200F895C007A280D /* LaunchScreen.storyboard */; };
+		02472215200F8D03007A280D /* ios_starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02472214200F8D03007A280D /* ios_starterTests.swift */; };
 		5B068F3B22194FED5C188C34 /* Pods_ios_starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02472217200F8D03007A280D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 024721F1200F895C007A280D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 024721F8200F895C007A280D;
+			remoteInfo = "ios-starter";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		024721F9200F895C007A280D /* ios-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +34,9 @@
 		02472203200F895C007A280D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02472206200F895C007A280D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02472208200F895C007A280D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02472212200F8D03007A280D /* ios-starterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-starterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02472214200F8D03007A280D /* ios_starterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_starterTests.swift; sourceTree = "<group>"; };
+		02472216200F8D03007A280D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714904F99CA1CA2C336AC091 /* Pods-ios-starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.release.xcconfig"; sourceTree = "<group>"; };
 		767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B5B8062FD9FFE288A9B669 /* Pods-ios-starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0247220F200F8D03007A280D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				024721FB200F895C007A280D /* ios-starter */,
+				02472213200F8D03007A280D /* ios-starterTests */,
 				024721FA200F895C007A280D /* Products */,
 				6593E4A47D87C370CDB4CC88 /* Pods */,
 				35991988150A4C423CA41CDB /* Frameworks */,
@@ -54,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				024721F9200F895C007A280D /* ios-starter.app */,
+				02472212200F8D03007A280D /* ios-starterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +92,15 @@
 				02472208200F895C007A280D /* Info.plist */,
 			);
 			path = "ios-starter";
+			sourceTree = "<group>";
+		};
+		02472213200F8D03007A280D /* ios-starterTests */ = {
+			isa = PBXGroup;
+			children = (
+				02472214200F8D03007A280D /* ios_starterTests.swift */,
+				02472216200F8D03007A280D /* Info.plist */,
+			);
+			path = "ios-starterTests";
 			sourceTree = "<group>";
 		};
 		35991988150A4C423CA41CDB /* Frameworks */ = {
@@ -111,6 +143,24 @@
 			productReference = 024721F9200F895C007A280D /* ios-starter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		02472211200F8D03007A280D /* ios-starterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0247221B200F8D03007A280D /* Build configuration list for PBXNativeTarget "ios-starterTests" */;
+			buildPhases = (
+				0247220E200F8D03007A280D /* Sources */,
+				0247220F200F8D03007A280D /* Frameworks */,
+				02472210200F8D03007A280D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02472218200F8D03007A280D /* PBXTargetDependency */,
+			);
+			name = "ios-starterTests";
+			productName = "ios-starterTests";
+			productReference = 02472212200F8D03007A280D /* ios-starterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +174,11 @@
 					024721F8200F895C007A280D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					02472211200F8D03007A280D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 024721F8200F895C007A280D;
 					};
 				};
 			};
@@ -141,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				024721F8200F895C007A280D /* ios-starter */,
+				02472211200F8D03007A280D /* ios-starterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +209,13 @@
 				02472207200F895C007A280D /* LaunchScreen.storyboard in Resources */,
 				02472204200F895C007A280D /* Assets.xcassets in Resources */,
 				02472202200F895C007A280D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02472210200F8D03007A280D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +285,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0247220E200F8D03007A280D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02472215200F8D03007A280D /* ios_starterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02472218200F8D03007A280D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 024721F8200F895C007A280D /* ios-starter */;
+			targetProxy = 02472217200F8D03007A280D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		02472200200F895C007A280D /* Main.storyboard */ = {
@@ -381,6 +460,36 @@
 			};
 			name = Release;
 		};
+		02472219200F8D03007A280D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ios-starterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omirho.ios-starterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-starter.app/ios-starter";
+			};
+			name = Debug;
+		};
+		0247221A200F8D03007A280D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ios-starterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omirho.ios-starterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-starter.app/ios-starter";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -398,6 +507,15 @@
 			buildConfigurations = (
 				0247220C200F895C007A280D /* Debug */,
 				0247220D200F895C007A280D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0247221B200F8D03007A280D /* Build configuration list for PBXNativeTarget "ios-starterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02472219200F8D03007A280D /* Debug */,
+				0247221A200F8D03007A280D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
