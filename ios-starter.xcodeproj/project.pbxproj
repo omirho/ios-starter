@@ -13,6 +13,7 @@
 		02472204200F895C007A280D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02472203200F895C007A280D /* Assets.xcassets */; };
 		02472207200F895C007A280D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02472205200F895C007A280D /* LaunchScreen.storyboard */; };
 		02472215200F8D03007A280D /* ios_starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02472214200F8D03007A280D /* ios_starterTests.swift */; };
+		0ED46B8AA90BAC0E60FEB340 /* Pods_ios_starterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE199D13EB27F1357EB2B0A5 /* Pods_ios_starterTests.framework */; };
 		5B068F3B22194FED5C188C34 /* Pods_ios_starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +38,11 @@
 		02472212200F8D03007A280D /* ios-starterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-starterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02472214200F8D03007A280D /* ios_starterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_starterTests.swift; sourceTree = "<group>"; };
 		02472216200F8D03007A280D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE66BEBB5FA07BA8C9907A1 /* Pods-ios-starterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starterTests/Pods-ios-starterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		714904F99CA1CA2C336AC091 /* Pods-ios-starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.release.xcconfig"; sourceTree = "<group>"; };
 		767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE199D13EB27F1357EB2B0A5 /* Pods_ios_starterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_starterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF91A5B6DCCC25B1577E371A /* Pods-ios-starterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starterTests/Pods-ios-starterTests.release.xcconfig"; sourceTree = "<group>"; };
 		F7B5B8062FD9FFE288A9B669 /* Pods-ios-starter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED46B8AA90BAC0E60FEB340 /* Pods_ios_starterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */,
+				CE199D13EB27F1357EB2B0A5 /* Pods_ios_starterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +122,8 @@
 			children = (
 				F7B5B8062FD9FFE288A9B669 /* Pods-ios-starter.debug.xcconfig */,
 				714904F99CA1CA2C336AC091 /* Pods-ios-starter.release.xcconfig */,
+				2DE66BEBB5FA07BA8C9907A1 /* Pods-ios-starterTests.debug.xcconfig */,
+				DF91A5B6DCCC25B1577E371A /* Pods-ios-starterTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -147,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0247221B200F8D03007A280D /* Build configuration list for PBXNativeTarget "ios-starterTests" */;
 			buildPhases = (
+				29D87F3D60DF0E913D3B19CF /* [CP] Check Pods Manifest.lock */,
 				0247220E200F8D03007A280D /* Sources */,
 				0247220F200F8D03007A280D /* Frameworks */,
 				02472210200F8D03007A280D /* Resources */,
+				9799AF2E87B8E1D36C4FE7E0 /* [CP] Embed Pods Frameworks */,
+				964A7DFCCF57CF93E2FDC06F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +251,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		29D87F3D60DF0E913D3B19CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-starterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5371EC2592542B32BD520314 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +285,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964A7DFCCF57CF93E2FDC06F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-starterTests/Pods-ios-starterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9799AF2E87B8E1D36C4FE7E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-starterTests/Pods-ios-starterTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-starterTests/Pods-ios-starterTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9D562881AC0162184F35C54 /* [CP] Copy Pods Resources */ = {
@@ -462,6 +524,7 @@
 		};
 		02472219200F8D03007A280D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE66BEBB5FA07BA8C9907A1 /* Pods-ios-starterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +540,7 @@
 		};
 		0247221A200F8D03007A280D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF91A5B6DCCC25B1577E371A /* Pods-ios-starterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
