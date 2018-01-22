@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+	@IBOutlet weak var label1: UILabel!
+	@IBOutlet weak var label2: UILabel!
+	
+	override func viewDidLoad() {
+		label1.text = NSLocalizedString("Hello World", comment: "")
+		label2.text = NSLocalizedString("hello world", comment: "")
+	}
 }
-
