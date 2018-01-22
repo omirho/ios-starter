@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   AppKeys_DEV.plist
+   ios-starter
+
+   Created by Pulkit Arora on 22/01/18.
+   Copyright (c) 2018 Pulkit Arora. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+<key>analyticsKey</key>
+<string>haf6d9fha8v56abs</string>
+</dict>
+</plist>
