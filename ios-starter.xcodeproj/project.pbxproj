@@ -10,7 +10,7 @@
 		024721FD200F895C007A280D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024721FC200F895C007A280D /* AppDelegate.swift */; };
 		024721FF200F895C007A280D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024721FE200F895C007A280D /* ViewController.swift */; };
 		02472202200F895C007A280D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02472200200F895C007A280D /* Main.storyboard */; };
-		02472204200F895C007A280D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02472203200F895C007A280D /* Assets.xcassets */; };
+		02472204200F895C007A280D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02472203200F895C007A280D /* Images.xcassets */; };
 		02472207200F895C007A280D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02472205200F895C007A280D /* LaunchScreen.storyboard */; };
 		02472215200F8D03007A280D /* ios_starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02472214200F8D03007A280D /* ios_starterTests.swift */; };
 		024722612015CB67007A280D /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024722602015CB67007A280D /* AppKeys.swift */; };
@@ -20,6 +20,7 @@
 		0247226C2015CD3F007A280D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247226B2015CD3F007A280D /* Localization.swift */; };
 		024722722015D24A007A280D /* AppKeys_DEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024722712015D24A007A280D /* AppKeys_DEV.plist */; };
 		0247228120161FBE007A280D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0247227F20161FBE007A280D /* Localizable.strings */; };
+		02472283201634AB007A280D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02472282201634AB007A280D /* Colors.xcassets */; };
 		0ED46B8AA90BAC0E60FEB340 /* Pods_ios_starterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE199D13EB27F1357EB2B0A5 /* Pods_ios_starterTests.framework */; };
 		5B068F3B22194FED5C188C34 /* Pods_ios_starter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +40,7 @@
 		024721FC200F895C007A280D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024721FE200F895C007A280D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02472201200F895C007A280D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02472203200F895C007A280D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02472203200F895C007A280D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02472206200F895C007A280D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02472208200F895C007A280D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02472212200F8D03007A280D /* ios-starterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-starterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +54,7 @@
 		024722702015D1F1007A280D /* AppKeys.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = AppKeys.map; sourceTree = "<group>"; };
 		024722712015D24A007A280D /* AppKeys_DEV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppKeys_DEV.plist; sourceTree = "<group>"; };
 		0247228020161FBE007A280D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		02472282201634AB007A280D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2DE66BEBB5FA07BA8C9907A1 /* Pods-ios-starterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starterTests/Pods-ios-starterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		714904F99CA1CA2C336AC091 /* Pods-ios-starter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-starter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-starter/Pods-ios-starter.release.xcconfig"; sourceTree = "<group>"; };
 		767CD62773A91782E86D5D11 /* Pods_ios_starter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_starter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,10 +111,11 @@
 				024721FC200F895C007A280D /* AppDelegate.swift */,
 				024721FE200F895C007A280D /* ViewController.swift */,
 				02472200200F895C007A280D /* Main.storyboard */,
-				02472203200F895C007A280D /* Assets.xcassets */,
+				02472203200F895C007A280D /* Images.xcassets */,
 				02472205200F895C007A280D /* LaunchScreen.storyboard */,
 				02472208200F895C007A280D /* Info.plist */,
 				0247227F20161FBE007A280D /* Localizable.strings */,
+				02472282201634AB007A280D /* Colors.xcassets */,
 			);
 			path = "ios-starter";
 			sourceTree = "<group>";
@@ -266,7 +269,8 @@
 			files = (
 				0247228120161FBE007A280D /* Localizable.strings in Resources */,
 				02472207200F895C007A280D /* LaunchScreen.storyboard in Resources */,
-				02472204200F895C007A280D /* Assets.xcassets in Resources */,
+				02472204200F895C007A280D /* Images.xcassets in Resources */,
+				02472283201634AB007A280D /* Colors.xcassets in Resources */,
 				024722722015D24A007A280D /* AppKeys_DEV.plist in Resources */,
 				02472202200F895C007A280D /* Main.storyboard in Resources */,
 			);
