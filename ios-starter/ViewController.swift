@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var label2: UILabel!
 	
 	override func viewDidLoad() {
-		label1.text = NSLocalizedString("Hello World", comment: "")
-		label2.text = NSLocalizedString("hello world", comment: "")
+		label1.text = L10n.helloWorld
+		label2.text = L10n.helloWorld
 	}
 }
