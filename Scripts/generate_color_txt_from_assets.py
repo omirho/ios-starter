@@ -9,7 +9,6 @@ def getHexFromFloatingRGBA(r, g, b, a):
         if (v > 255):
             v = 255
         rgba.append(v)
-    print rgba
     hex_result = "".join([str(format(val, '02x')).upper() for val in rgba])
     return hex_result
 
