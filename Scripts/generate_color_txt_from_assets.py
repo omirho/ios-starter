@@ -3,8 +3,14 @@
 import os, json, argparse
 
 def getHexFromFloatingRGBA(r, g, b, a):
-    rgb = (r, g, b, a)
-    hex_result = "".join([str(format(int(float(val) * 255.99999999), '02x')).upper() for val in rgb])
+    rgba = []
+    for c in (r, g, b, a):
+        v = int(float(c) * 256)
+        if (v > 255):
+            v = 255
+        rgba.append(v)
+    print rgba
+    hex_result = "".join([str(format(val, '02x')).upper() for val in rgba])
     return hex_result
 
 def getColorsFromAssetFile(filePath, colors):
