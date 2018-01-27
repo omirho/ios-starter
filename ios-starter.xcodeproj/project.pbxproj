@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0247226F2015D193007A280D /* Config */,
-				0247225F2015CB0E007A280D /* Generated Files */,
+				0247225F2015CB0E007A280D /* Generated */,
 				024721FC200F895C007A280D /* AppDelegate.swift */,
 				024721FE200F895C007A280D /* ViewController.swift */,
 				02472200200F895C007A280D /* Main.storyboard */,
@@ -129,13 +129,13 @@
 			path = "ios-starterTests";
 			sourceTree = "<group>";
 		};
-		0247225F2015CB0E007A280D /* Generated Files */ = {
+		0247225F2015CB0E007A280D /* Generated */ = {
 			isa = PBXGroup;
 			children = (
 				024722642015CC72007A280D /* Constants */,
 				024722602015CB67007A280D /* AppKeys.swift */,
 			);
-			path = "Generated Files";
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		024722642015CC72007A280D /* Constants */ = {
