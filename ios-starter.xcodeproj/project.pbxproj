@@ -86,6 +86,7 @@
 		024721F0200F895C007A280D = {
 			isa = PBXGroup;
 			children = (
+				0247225F2015CB0E007A280D /* Generated */,
 				024721FB200F895C007A280D /* ios-starter */,
 				02472213200F8D03007A280D /* ios-starterTests */,
 				024721FA200F895C007A280D /* Products */,
@@ -107,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				0247226F2015D193007A280D /* Config */,
-				0247225F2015CB0E007A280D /* Generated */,
 				024721FC200F895C007A280D /* AppDelegate.swift */,
 				024721FE200F895C007A280D /* ViewController.swift */,
 				02472200200F895C007A280D /* Main.storyboard */,
