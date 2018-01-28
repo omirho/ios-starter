@@ -156,6 +156,7 @@
 				024721FE200F895C007A280D /* ViewController.swift */,
 				02472200200F895C007A280D /* Main.storyboard */,
 				02472205200F895C007A280D /* LaunchScreen.storyboard */,
+				02472208200F895C007A280D /* Info.plist */,
 			);
 			path = "ios-starter";
 			sourceTree = "<group>";
@@ -195,7 +196,6 @@
 			children = (
 				024722702015D1F1007A280D /* AppKeys.map */,
 				024722712015D24A007A280D /* AppKeys_DEV.plist */,
-				02472208200F895C007A280D /* Info.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
