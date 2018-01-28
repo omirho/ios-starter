@@ -1,2 +1,20 @@
 #!/bin/sh
-../Tools/configen -p ../ios-starter/Config/AppKeys_DEV.plist -h ../ios-starter/Config/AppKeys.map -n AppKeys -o ../ios-starter/Generated\ Files/
+
+KEYS_FILE_NAME = AppKeys_DEV.plist
+
+if [ "${CONFIGURATION}" = "Release" ]; then
+	KEYS_FILE_NAME = AppKeys.plist
+fi
+
+KEYS_FILE_RELATIVE_PATH = ./Config/${KEYS_FILE_NAME}
+BASE_KEYS_FILE_PATH = ${SRCROOT}/${PROJECT_NAME}/${KEYS_FILE_RELATIVE_PATH}
+TARGET_KEYS_FILE_PATH = ${SRCROOT}/${TARGET_NAME}/${KEYS_FILE_RELATIVE_PATH}
+KEYS_MAP_FILE_PATH = ${SRCROOT}/${PROJECT_NAME}/Config/AppKeys.map
+OUTPUT_KEYS_FILE = AppKeys
+OUTPUT_KEYS_PATH = ${SRCROOT}/Generated/
+
+if [ ! -f TARGET_KEYS_FILE_PATH ]; then
+	TARGET_KEYS_FILE_PATH = BASE_KEYS_FILE_PATH
+fi
+
+${SRCROOT}/Tools/configen -p ${TARGET_KEYS_FILE_PATH} -h ${KEYS_MAP_FILE_PATH} -n ${OUTPUT_KEYS_FILE} -o ${OUTPUT_KEYS_PATH}
