@@ -84,6 +84,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0212E25F201E233000DBA7ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0212E263201E23EA00DBA7ED /* Localizations */,
+				0212E262201E236E00DBA7ED /* Fonts */,
+				0212E261201E236600DBA7ED /* Colors */,
+				0212E260201E235F00DBA7ED /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0212E260201E235F00DBA7ED /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				02472203200F895C007A280D /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0212E261201E236600DBA7ED /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				02472282201634AB007A280D /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		0212E262201E236E00DBA7ED /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0212E263201E23EA00DBA7ED /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				0247227F20161FBE007A280D /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
 		024721F0200F895C007A280D = {
 			isa = PBXGroup;
 			children = (
@@ -108,15 +150,12 @@
 		024721FB200F895C007A280D /* ios-starter */ = {
 			isa = PBXGroup;
 			children = (
+				0212E25F201E233000DBA7ED /* Resources */,
 				0247226F2015D193007A280D /* Config */,
 				024721FC200F895C007A280D /* AppDelegate.swift */,
 				024721FE200F895C007A280D /* ViewController.swift */,
 				02472200200F895C007A280D /* Main.storyboard */,
-				02472203200F895C007A280D /* Images.xcassets */,
 				02472205200F895C007A280D /* LaunchScreen.storyboard */,
-				02472208200F895C007A280D /* Info.plist */,
-				0247227F20161FBE007A280D /* Localizable.strings */,
-				02472282201634AB007A280D /* Colors.xcassets */,
 			);
 			path = "ios-starter";
 			sourceTree = "<group>";
@@ -156,6 +195,7 @@
 			children = (
 				024722702015D1F1007A280D /* AppKeys.map */,
 				024722712015D24A007A280D /* AppKeys_DEV.plist */,
+				02472208200F895C007A280D /* Info.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
