@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0212E25E201E21A600DBA7ED /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212E25D201E21A600DBA7ED /* Fonts.swift */; };
 		024721FD200F895C007A280D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024721FC200F895C007A280D /* AppDelegate.swift */; };
 		024721FF200F895C007A280D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024721FE200F895C007A280D /* ViewController.swift */; };
 		02472202200F895C007A280D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02472200200F895C007A280D /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		024722682015CD17007A280D /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024722672015CD17007A280D /* Storyboards.swift */; };
 		0247226A2015CD25007A280D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024722692015CD25007A280D /* Images.swift */; };
 		0247226C2015CD3F007A280D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247226B2015CD3F007A280D /* Localization.swift */; };
-		024722722015D24A007A280D /* AppKeys_DEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 024722712015D24A007A280D /* AppKeys_DEV.plist */; };
 		0247228120161FBE007A280D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0247227F20161FBE007A280D /* Localizable.strings */; };
 		02472283201634AB007A280D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02472282201634AB007A280D /* Colors.xcassets */; };
 		0ED46B8AA90BAC0E60FEB340 /* Pods_ios_starterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE199D13EB27F1357EB2B0A5 /* Pods_ios_starterTests.framework */; };
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0212E25D201E21A600DBA7ED /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		024721F9200F895C007A280D /* ios-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		024721FC200F895C007A280D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024721FE200F895C007A280D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 				024722672015CD17007A280D /* Storyboards.swift */,
 				024722692015CD25007A280D /* Images.swift */,
 				0247226B2015CD3F007A280D /* Localization.swift */,
+				0212E25D201E21A600DBA7ED /* Fonts.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -271,7 +273,6 @@
 				02472207200F895C007A280D /* LaunchScreen.storyboard in Resources */,
 				02472204200F895C007A280D /* Images.xcassets in Resources */,
 				02472283201634AB007A280D /* Colors.xcassets in Resources */,
-				024722722015D24A007A280D /* AppKeys_DEV.plist in Resources */,
 				02472202200F895C007A280D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0212E25E201E21A600DBA7ED /* Fonts.swift in Sources */,
 				024722612015CB67007A280D /* AppKeys.swift in Sources */,
 				0247226A2015CD25007A280D /* Images.swift in Sources */,
 				0247226C2015CD3F007A280D /* Localization.swift in Sources */,
