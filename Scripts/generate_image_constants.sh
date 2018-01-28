@@ -3,10 +3,10 @@
 IMAGE_FILE_RELATIVE_PATH = ./Resources/Images/Images.xcassets
 BASE_IMAGE_FILE_PATH = ${SRCROOT}/${PROJECT_NAME}/${IMAGE_FILE_RELATIVE_PATH}
 TARGET_IMAGE_FILE_PATH = ${SRCROOT}/${TARGET_NAME}/${IMAGE_FILE_RELATIVE_PATH}
-OUTPUT_PATH = ${SRCROOT}/Generated/Constants/Images.swift
+OUTPUT_IMAGE_PATH = ${SRCROOT}/Generated/Constants/Images.swift
 
 if [ ! -f TARGET_IMAGE_FILE_PATH ]; then
 	TARGET_IMAGE_FILE_PATH = BASE_IMAGE_FILE_PATH
 fi
 
-${SRCROOT}/Tools/swiftgen/bin/swiftgen xcassets -t swift4 ${TARGET_IMAGE_FILE_PATH} --output ${OUTPUT_PATH}
+${SRCROOT}/Tools/swiftgen/bin/swiftgen xcassets -t swift4 ${TARGET_IMAGE_FILE_PATH} --output ${OUTPUT_IMAGE_PATH}

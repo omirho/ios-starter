@@ -1,2 +1,12 @@
 #!/bin/sh
-../Tools/swiftgen/bin/swiftgen strings -t structured-swift4 ../ios-starter/Base.lproj/Localizable.strings  --output ../ios-starter/Generated\ Files/Constants/Localization.swift
+
+LOCALIZATION_FILE_RELATIVE_PATH = ./Resources/Localizations/Base.lproj/Localizable.strings
+BASE_LOCALIZATION_FILE_PATH = ${SRCROOT}/${PROJECT_NAME}/${LOCALIZATION_FILE_RELATIVE_PATH}
+TARGET_LOCALIZATION_FILE_PATH = ${SRCROOT}/${TARGET_NAME}/${LOCALIZATION_FILE_RELATIVE_PATH}
+OUTPUT_LOCALIZATION_PATH = ${SRCROOT}/Generated/Constants/Localization.swift
+
+if [ ! -f TARGET_LOCALIZATION_FILE_PATH ]; then
+	TARGET_LOCALIZATION_FILE_PATH = BASE_LOCALIZATION_FILE_PATH
+fi
+
+${SRCROOT}/Tools/swiftgen/bin/swiftgen strings -t structured-swift4 ${TARGET_LOCALIZATION_FILE_PATH} --output ${OUTPUT_LOCALIZATION_PATH}
