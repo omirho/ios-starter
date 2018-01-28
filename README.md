@@ -5,6 +5,9 @@ A starter project for ios to set up a build process for multiple target apps(whi
 * Xcode 9 and above
 * python (required for scripts)
 
+# How does it work
+[WIP]
+
 # Assumptions
 The project and scripts make certain assumptions about the folder structure and project properties. They are listed as below:
 * The project name and the main target folder name should be the same. (Used in the scripts)
