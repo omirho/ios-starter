@@ -227,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0247220B200F895C007A280D /* Build configuration list for PBXNativeTarget "ios-starter" */;
 			buildPhases = (
+				0212E264201E338400DBA7ED /* ShellScript */,
 				13C5915E163518468ADA0E96 /* [CP] Check Pods Manifest.lock */,
 				024721F5200F895C007A280D /* Sources */,
 				024721F6200F895C007A280D /* Frameworks */,
@@ -327,6 +328,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0212E264201E338400DBA7ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPTS_PATH=\"${SRCROOT}/Scripts\"\n${SCRIPTS_PATH}/generate_image_constants.sh";
+		};
 		13C5915E163518468ADA0E96 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
