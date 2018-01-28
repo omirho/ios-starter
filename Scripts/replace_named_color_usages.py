@@ -1,50 +1,59 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-import os, json
+import os, json, re, argparse
 
-print os.getcwd()
-
-colorDict = {}
-
-# read all colorset
-for root, dirs, files in os.walk("./"):
-    for d in dirs:
-        if d.endswith(".colorset"):
-            colorK = d.split(".")[0]
-            print "found " + colorK
+def getColorsFromAssetFile(filePath, colors):
+    for root, dirs, files in os.walk(filePath):
+        for dir in dirs:
+            if dir.endswith(".colorset"):
+                colorName = dir.split(".")[0]
             for file in files:
                 if file == "Contents.json":
-                    f = open(os.path.join(root, d, file))
+                    f = open(os.path.join(root, dir, file))
                     jd = json.load(f)
                     rgb = jd["colors"][0]["color"]["components"]
-                    colorDict[colorK] = 'red="{}" green="{}" blue="{}" alpha="{}" colorSpace="calibratedRGB"'.format(rgb["red"], rgb["green"], rgb["blue"], rgb["alpha"])
+                    colors[colorName] = 'red="{}" green="{}" blue="{}" alpha="{}" colorSpace="calibratedRGB"'.format(rgb["red"], rgb["green"], rgb["blue"], rgb["alpha"])
+    return colors
 
-print ""
-import re
+def replaceNamedColorsToRGBInPath(filePath, colors):
+	for root, dirs, files in os.walk(filePath):
+	    for file in files:
+	        if file.endswith((".storyboard", ".xib")):
+	            path = os.path.join(root, file)
+	            backupPath = path + ".bak"
+	            f = open(path)
+	            nf = f.read()
+	            f.close()
 
-# replacing
-for root, dirs, files in os.walk("./"):
-    for file in files:
-        if file.endswith((".storyboard", ".xib")):
-            path = os.path.join(root, file)
-            print "Replacing namedColor in " + path
-            f = open(path)
-            nf = f.read()
-            f.close()
+	            bf = open(backupPath, 'w')
+	            bf.write(nf)
+	            bf.close()
 
-            nf = re.sub(r" +<namedColor name=.*\n.*\n +</namedColor>\n", '', nf)
-            nf = re.sub(r" +<capability name=\"Named colors\" minToolsVersion=\".*\n", '', nf)
+	            nf = re.sub(r" +<namedColor name=.*\n.*\n +</namedColor>\n", '', nf)
+	            nf = re.sub(r" +<capability name=\"Named colors\" minToolsVersion=\".*\n", '', nf)
 
-            for k, v in colorDict.items():
-                nf = re.sub(r'name="{}"'.format(k), v, nf)
+	            for k, v in colors.items():
+	                nf = re.sub(r'name="{}"'.format(k), v, nf)
 
-            f = open(path, 'w')
-            f.write(nf)
-            f.close()
+	            f = open(path, 'w')
+	            f.write(nf)
+	            f.close()
 
-# Usage:
-# if [ "${CONFIGURATION}" = "Release" ]; then
-#    python NamedColors2RGB.py
-#fi
+def parseArgs():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--colorsFile', required=True)
+    parser.add_argument('-r', '--replaceDirectory', required=True)
+    return parser.parse_args()
+
+def getAbsolutePath(path):
+    return os.path.abspath(os.path.expanduser(path))
+
+def main():
+	args = parseArgs()
+	colors = {}
+	colors = getColorsFromAssetFile(getAbsolutePath(args.colorsFile), colors)
+	replaceNamedColorsToRGBInPath(getAbsolutePath(args.replaceDirectory), colors)
+
+if __name__ == "__main__":
+	main()
 
