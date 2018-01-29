@@ -227,13 +227,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0247220B200F895C007A280D /* Build configuration list for PBXNativeTarget "ios-starter" */;
 			buildPhases = (
-				0212E264201E338400DBA7ED /* Create Constants */,
+				0212E264201E338400DBA7ED /* Create Constants and replace Named Colors */,
 				13C5915E163518468ADA0E96 /* [CP] Check Pods Manifest.lock */,
 				024721F5200F895C007A280D /* Sources */,
 				024721F6200F895C007A280D /* Frameworks */,
 				024721F7200F895C007A280D /* Resources */,
 				5371EC2592542B32BD520314 /* [CP] Embed Pods Frameworks */,
 				C9D562881AC0162184F35C54 /* [CP] Copy Pods Resources */,
+				029A03B4201EF05E0064110E /* Revert backed up files */,
 			);
 			buildRules = (
 			);
@@ -328,19 +329,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0212E264201E338400DBA7ED /* Create Constants */ = {
+		0212E264201E338400DBA7ED /* Create Constants and replace Named Colors */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Create Constants";
+			name = "Create Constants and replace Named Colors";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nSCRIPTS_PATH=\"${SRCROOT}/Scripts\"\n${SCRIPTS_PATH}/generate_image_constants.sh\n${SCRIPTS_PATH}/generate_appkeys.sh\n${SCRIPTS_PATH}/generate_color_constants.sh\n${SCRIPTS_PATH}/generate_font_constants.sh\n${SCRIPTS_PATH}/generate_localization_constants.sh\n${SCRIPTS_PATH}/generate_storyboard_constants.sh";
+			shellScript = "${SRCROOT}/Scripts/prebuild.sh";
+		};
+		029A03B4201EF05E0064110E /* Revert backed up files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Revert backed up files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/Scripts/postbuild.sh";
 		};
 		13C5915E163518468ADA0E96 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

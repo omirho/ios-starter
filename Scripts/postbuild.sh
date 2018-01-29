@@ -1,2 +1,2 @@
 #!/bin/sh
-git reset --hard
+${SRCROOT}/Scripts/replace_backup_files.py -r ${SRCROOT}/${PROJECT_NAME}
