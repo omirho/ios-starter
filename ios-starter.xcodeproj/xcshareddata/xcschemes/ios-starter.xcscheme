@@ -104,7 +104,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "${SRCROOT}/Scripts/replace_named_color_usages.py">
+               scriptText = "COLOR_FILE_RELATIVE_PATH=&quot;./Resources/Colors/Colors.xcassets&quot;&#10;BASE_COLOR_FILE_PATH=&quot;${SRCROOT}/${PROJECT_NAME}/${COLOR_FILE_RELATIVE_PATH}&quot;&#10;TARGET_COLOR_FILE_PATH=&quot;${SRCROOT}/${TARGET_NAME}/${COLOR_FILE_RELATIVE_PATH}&quot;&#10;&#10;if [ ! -f $TARGET_COLOR_FILE_PATH ]; then&#10;    TARGET_COLOR_FILE_PATH=$BASE_COLOR_FILE_PATH&#10;fi&#10;&#10;${SRCROOT}/Scripts/replace_named_color_usages.py -c ${TARGET_COLOR_FILE_PATH} -r ${SRCROOT}/${PROJECT_NAME}">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
@@ -113,7 +113,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "${SRCROOT}/Scripts/replace_backup_files.py">
+               scriptText = "${SRCROOT}/Scripts/replace_backup_files.py -r ${SRCROOT}/${PROJECT_NAME}">
             </ActionContent>
          </ExecutionAction>
       </PostActions>
