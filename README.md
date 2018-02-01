@@ -5,6 +5,14 @@ A starter project for ios to set up a build process for multiple target apps(whi
 * Xcode 9 and above
 * python (required for scripts)
 
+# How to run
+```
+1. Clone repo
+2. cd phoenix
+3. pod install
+4. Open 'MindTickle.xcworkspace' with Xcode and build/run.
+```
+
 # How does it work
 [WIP]
 
