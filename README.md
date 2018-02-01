@@ -8,9 +8,9 @@ A starter project for ios to set up a build process for multiple target apps(whi
 # How to run
 ```
 1. Clone repo
-2. cd phoenix
+2. cd ios-starter
 3. pod install
-4. Open 'MindTickle.xcworkspace' with Xcode and build/run.
+4. Open 'ios-starter.xcworkspace' with Xcode and build/run.
 ```
 
 # How does it work
