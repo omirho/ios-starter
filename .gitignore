@@ -6,7 +6,8 @@
 build/
 DerivedData/
 *.bak
-AppKeys.swift
+AppKeys.plist
+Generated/
 
 ## Various settings
 *.pbxuser

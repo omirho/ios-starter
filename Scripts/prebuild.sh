@@ -1,5 +1,7 @@
 set -e
 
+mkdir -p ${SRCROOT}/Generated/Constants
+
 SCRIPTS_PATH="${SRCROOT}/Scripts"
 
 ${SCRIPTS_PATH}/generate_image_constants.sh
