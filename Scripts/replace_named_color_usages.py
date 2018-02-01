@@ -25,7 +25,7 @@ def replaceNamedColorsToRGBInPath(filePath, colors):
 	            nf = f.read()
 	            f.close()
 
-	            bf = open(backupPath, 'w')
+	            bf = open(backupPath, 'w+')
 	            bf.write(nf)
 	            bf.close()
 

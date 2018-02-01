@@ -32,7 +32,9 @@ def generateLinesFromColors(colorsDict):
     return "\n".join(lines)
 
 def writeLinesToFile(filePath, lines):
-    f = open(filePath, 'w')
+    if not os.path.exists(os.path.dirname(filePath)):
+        os.makedirs(os.path.dirname(filePath))
+    f = open(filePath, 'w+')
     f.write(lines)
     f.close()
 
