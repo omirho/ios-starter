@@ -9,5 +9,5 @@ jobs:
     machine: true
     steps:
       - checkout
-      - bundle exec danger
+      - run: bundle exec danger
 
