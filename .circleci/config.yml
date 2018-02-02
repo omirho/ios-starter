@@ -24,6 +24,7 @@ jobs:
       #    command: pod install
 
   test:
+    machine: true
     steps:
       - checkout
       - bundle exec danger
