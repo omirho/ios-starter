@@ -1,4 +1,6 @@
-test:
-  pre:
-    - bundle exec danger
+version: 2
+jobs:
+  test:
+    pre:
+      - bundle exec danger
 
