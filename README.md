@@ -1,3 +1,5 @@
+[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/omirho/ios-starter/blob/master/LICENSE)
+
 # ios-starter
 A starter project for ios to set up a build process for multiple target apps(white-labeling), handling string constants and more.
 
