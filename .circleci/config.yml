@@ -12,16 +12,16 @@ jobs:
   build:
 
     # Specify the Xcode version to use
-    macos:
-      xcode: "9.0"
+    #macos:
+    #  xcode: "9.0"
 
     steps:
       - checkout
 
       # Install CocoaPods
-      - run:
-          name: Install CocoaPods
-          command: pod install
+      #- run:
+      #    name: Install CocoaPods
+      #    command: pod install
 
   test:
     steps:
