@@ -1,5 +1,6 @@
 language: swift
 osx_image: xcode9.2
+install: pod install
 script:
  - bundle exec danger --verbose
 
