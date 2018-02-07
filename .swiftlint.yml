@@ -1,4 +1,5 @@
 indentation: tabs
+warning_threshold: 0
 disabled_rules: # rule identifiers to exclude from running
 opt_in_rules: # some rules are only opt-in
   - array_init
