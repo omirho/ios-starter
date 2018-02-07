@@ -15,5 +15,5 @@ fail("fit left in tests") if `grep -r fit specs/ `.length > 1
 # Run SwiftLint
 swiftlint.verbose = true
 swiftlint.max_num_violations = 0
-swiftlint.lint_files fail_on_error: true additional_swiftlint_args: '--strict'
+swiftlint.lint_files(fail_on_error: true, additional_swiftlint_args: '--strict')
 
