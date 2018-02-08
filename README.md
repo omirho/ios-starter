@@ -1,5 +1,5 @@
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/omirho/ios-starter/blob/master/LICENSE)
-[![CircleCI](https://circleci.com/gh/omirho/ios-starter.svg?style=svg)](https://circleci.com/gh/omirho/ios-starter)
+[![Build Status](https://travis-ci.org/omirho/ios-starter.svg?branch=master)](https://travis-ci.org/omirho/ios-starter)
 
 # ios-starter
 A starter project for ios to set up a build process for multiple target apps(white-labeling), handling string constants and more.
