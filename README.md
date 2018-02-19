@@ -27,4 +27,4 @@ The project and scripts make certain assumptions about the folder structure and 
 
 
 # Small Todos
-* ignore generated file changes in source tree
+* ignore generated file changes in source tree (Completed)
