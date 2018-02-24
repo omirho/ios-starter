@@ -16,8 +16,12 @@ A starter project for ios to set up a build process for multiple target apps(whi
 4. Open 'ios-starter.xcworkspace' with Xcode and build/run.
 ```
 
-# How does it work
-[WIP]
+# How does it work [WIP]
+The project currently supports the following aspects of white-labelling:
+
+1. Theming (Colors)
+1. heming (Colors)
+1. heming (Colors)
 
 # Assumptions
 The project and scripts make certain assumptions about the folder structure and project properties. They are listed as below:
@@ -27,4 +31,4 @@ The project and scripts make certain assumptions about the folder structure and 
 
 
 # Small Todos
-* ignore generated file changes in source tree (Completed)
+- [ ] ignore generated file changes in source tree
